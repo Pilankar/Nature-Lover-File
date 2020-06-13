@@ -1,0 +1,48 @@
+body {
+    background-image: url("Images/green_wallpaper1.jpg");
+    font-family:montserrat;
+    height: 500px;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+}
+
+#navbar-brand-name {
+    font-family: 'Princess Sofia', cursive; 
+    color: white;
+}
+
+#navbar1 {
+    background-color: #9dfaca;
+}
+
+#fixed-vertical-navbar {
+    width: 20%;
+    height: 100%;
+    position:fixed;
+    left:0cm;
+    z-index:2;
+    overflow-x: hidden;
+    padding: 8px 0;
+    border: 5px solid #9dfaca;
+    background-color: white; 
+}
+
+#main-body-content {
+    margin-left: 20%;
+    background-attachment: fixed;
+    padding: 10px;
+    
+}
+
+#main-body-bg {
+    background-color: white;
+    opacity: 60%;
+    height: 100%;
+    border-radius: 20px;
+    margin-left: 20%;
+    background-attachment: fixed;
+    padding: 10px;
+}
