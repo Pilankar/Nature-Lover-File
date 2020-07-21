@@ -23,15 +23,26 @@
   <body>
 
     <!--navbar-->
-    <nav class="navbar navbar-light fix-top" style="background-color: #7bdaa0;">
+
+    <!--<div id="navbar-actual" class="fixed-top">-->
+    <nav class="navbar navbar-light sticky-top" style="background-color: #7bdaa0;">
       <a class="navbar-brand">
-        <h2 id="navbar-brand-name">
-          <img src="Images\Nature-Lover-Logo.png" width="70" height="70" alt="" loading="lazy">
+        <h3 id="navbar-brand-name">
+          <img src="Images\Nature-Lover-Logo.png" width="60" height="60" alt="" loading="lazy">
             Nature Lover
-        </h2>
+        </h3>
+      </a>
+      <a class="navbar-brand">
+        
+            <button type="button" class="btn btn-primary btn-lg z-depth-3" name="profile" id="profile-btn">
+                 Profile
+            </button>
+        
       </a>
     </nav>
-      <nav class="navbar navbar-expand-lg navbar-light " id="navbar1">
+
+
+    <!--  <nav class="navbar navbar-expand-lg navbar-light " id="navbar1">
       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -48,13 +59,15 @@
           </ul>
         </div>
 
-      </nav>
+      </nav> -->
     
-     
+    <!--</div>-->
+      
     <!---->
 
     <div id="fixed-vertical-navbar">
-      <nav class="navbar navbar-expand-lg navbar-light " >
+
+      <!-- <nav class="navbar navbar-expand-lg navbar-light " >
       
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -72,27 +85,163 @@
         </div>
 
       </nav>
-      <hr>
-      <nav class="nav nav-pills nav-fill flex-column flex-sm-column">
-        <a class="flex-sm-fill nav-link active" href="#">Active</a>
-        <a class="flex-sm-fill nav-link" href="#">Longer nav link</a>
-        <a class="flex-sm-fill nav-link" href="#">Link</a>
-        <a class="flex-sm-fill nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </nav>
+      <hr> -->
+    <nav class="nav nav-pills nav-fill flex-column flex-sm-column">
+        <a class="flex-sm-fill nav-link collapsed active" href="#" type="button" data-toggle="collapse" data-target="#Category">Category
+			<svg class="bi bi-caret-down-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
+				<path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+			</svg>
+		</a>
+        <div id="Category" class="collapse" role="tablist" aria-multiselectable="true">
+            <div  role="tab">
+                <a class="flex-sm-fill nav-link" href="Beach.html">Beach</a>
+            </div>
+            <div  role="tab">
+                <a class="flex-sm-fill nav-link" href="#">Temple</a>
+            </div>
+            <div  role="tab">
+                <a class="flex-sm-fill nav-link" href="#">Theotre</a>
+            </div>
+            <div  role="tab">
+                <a class="flex-sm-fill nav-link" href="#">Playground</a>
+            </div>
+            <div class="dropdown-divider"></div>
+            <!-- <a class="flex-sm-fill nav-link" href="#">Beach</a>
+            <div class="dropdown-divider"></div>
+            <a class="flex-sm-fill nav-link" href="#">Temple</a>
+            <div  class="dropdown-divider"></div>
+            <a class="flex-sm-fill nav-link" href="#">Theotre</a>
+            <div class="dropdown-divider"></div>
+            <a class="flex-sm-fill nav-link" href="#">Playground</a> -->
+        </div>
+          <!--<a class="flex-sm-fill nav-link" href="#">Category 
+            <button class="btn">
+                <svg class="bi bi-caret-down-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                </svg>
+            </button> </a>
+            <div id="accordianId" role="tablist" aria-multiselectable="true">
+              <div class="card">
+                <div class="card-header" role="tab" id="section1HeaderId">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section1ContentId" aria-expanded="true" aria-controls="section1ContentId">
+                      Section 1
+                    </a>
+                  </h5>
+                </div>
+                <div id="section1ContentId" class="collapse in" role="tabpanel" aria-labelledby="section1HeaderId">
+                  <div class="card-body">
+                    Section 1 content
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" role="tab" id="section2HeaderId">
+                  <h5 class="mb-0">
+                    <a data-toggle="collapse" data-parent="#accordianId" href="#section2ContentId" aria-expanded="true" aria-controls="section2ContentId">
+                      Section 2
+                    </a>
+                  </h5>
+                </div>
+                <div id="section2ContentId" class="collapse in" role="tabpanel" aria-labelledby="section2HeaderId">
+                  <div class="card-body">
+                    Section 2 content
+                  </div>
+                </div>
+              </div>
+            </div>-->
+        <a class="flex-sm-fill nav-link" href="#">Connect With Us</a>
+        <a class="flex-sm-fill nav-link" href="#">Add Places</a>
+        <a class="flex-sm-fill nav-link" href="#">Suggetions</a>
+
+         <!-- <nav class="nav nav-pills flex-column">
+            <a class="nav-link" href="#">Item 1</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#">Item 1-1</a>
+              <a class="nav-link ml-3 my-1" href="#">Item 1-2</a>
+            </nav>
+            <a class="nav-link" href="#">Item 2</a>
+            <a class="nav-link" href="#">Item 3</a>
+            <nav class="nav nav-pills flex-column">
+              <a class="nav-link ml-3 my-1" href="#">Item 3-1</a>
+              <a class="nav-link ml-3 my-1" href="#">Item 3-2</a>
+            </nav>
+          </nav>-->
+        
+        
+        <!--<div data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+          <h4 id="item-1">Item 1</h4>
+          <p>...</p>
+          <h5 id="item-1-1">Item 1-1</h5>
+          <p>...</p>
+          <h5 id="item-1-2">Item 1-2</h5>
+          <p>...</p>
+          <h4 id="item-2">Item 2</h4>
+          <p>...</p>
+          <h4 id="item-3">Item 3</h4>
+          <p>...</p>
+          <h5 id="item-3-1">Item 3-1</h5>
+          <p>...</p>
+          <h5 id="item-3-2">Item 3-2</h5>
+          <p>...</p>
+        </div>-->
+
+        <img src="Images\sticker1.png" alt="sticker" id="sticker1" loading="lazy" />
+        
+    </nav>
    
     </div>
 
     <!--Main Body-->
 
-  <div id="main-body-bg"></div>
+<div id="main-body-bg">
   <div id="main-body-content" >
-    <h2>Collapsing</h2>
+
+    <!-- <h2>Collapsing</h2>
     <button type="button" class="btn btn-primary collapsed" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
     <div id="demo" class="collapse">
       The .collapsing class is added when the transition starts, and removed when it is finished. In this example, the collapsible content gets a yellow background for those seconds it takes to show the content. The background color is removed when the transition has ended.
-    </div>
-  </div>
+    </div> -->
 
+    <p style="color:#226699"><u>Categories</u> - </p>
+    <div class="row">
+      <div class="col-sm-3" style="background-color: teal;">
+        <figure>
+          <a href="Beach.html">
+              <img class="catg-img" alt="beach" src="Images\cartoon_tropical_beach_vector.jpg">
+              <blockquote>Beach</blockquote>
+          </a>
+        </figure>
+      </div>
+      <div class="col-sm-3">
+        <figure>
+          <a href="#">
+              <img class="catg-img" alt="temple" src="Images\hindu-temple-clip-art.png">
+              <figcaption>Temple</figcaption>
+          </a>
+        </figure>
+      </div>
+      <div class="col-sm-3">
+        <figure>
+          <a href="#">
+              <img class="catg-img" alt="theotre" src="Images\theotre_masks.jpg">
+              <blockquote>Theotre</blockquote>
+          </a>
+        </figure>
+      </div>
+      <div class="col-sm-3">
+        <figure>
+          <a href="#">
+              <img class="catg-img" alt="playground" src="Images\playground-vector.jpg">
+              <blockquote>Playground</blockquote>
+          </a>
+      </figure>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
